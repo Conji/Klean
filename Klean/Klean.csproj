@@ -76,14 +76,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Exceptions\KleanException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Updater\Exceptions\VersionInvalidException.cs" />
+    <Compile Include="Updater\Version.cs" />
+    <Compile Include="Updater\VersionModifier.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".version" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Stats\" />
-    <Folder Include="Updater\" />
+    <Folder Include="Chat\Exceptions\" />
+    <Folder Include="Dependencies\Exceptions\" />
+    <Folder Include="Stats\Exceptions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
